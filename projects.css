@@ -78,7 +78,7 @@ body{
     
 }
 
-img{
+article img{
     width: 800px;  
     height: 500px;
     object-fit: contain;
@@ -99,7 +99,7 @@ header{
 .navigator{
    display: flex;
    flex-direction: row;
-    picture img{
+    img{
         width: 35px;
         height: 35px;
         padding-top: 10px;
@@ -107,5 +107,5 @@ header{
     label{
         padding-top: 18px;
         padding-left: 20px;
-    } 
+    }  
 }
