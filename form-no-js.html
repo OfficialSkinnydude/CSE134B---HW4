@@ -24,16 +24,17 @@
 <main>
     <form action="https://httpbin.org/post" method="POST" class="form">
         <label>Name:</label>
-        <input type="text" name="your name" placeholder="Your Name..." required minlength="1" maxlength="150">
+        <input id ="fullName" type="text" name="fullName" placeholder="Your Name..." required minlength="1" maxlength="150" pattern="[A-Za-z ]+"
+            title="Only letters and spaces allowed.">
 
         <label>Email:</label>
-        <input type="email" name="your email" placeholder="Your Email" required minlength="1" maxlength="50">
+        <input id ="userEmail" type="email" name="your email" placeholder="Your Email" required minlength="1" maxlength="50">
 
         <label>Phone Number:</label>
-        <input type="tel" name="your phone number" placeholder="Your Phone Number..." minlength="8" maxlength="15">
+        <input id="userTel" type="tel" name="your phone number" placeholder="Your Phone Number..." minlength="8" maxlength="15" pattern="[0-9]+" title="Only numbers allowed">
 
         <label>Message:</label>
-        <textarea name="your comment" placeholder="Message Here" required minlength="1" maxlength="500"></textarea>
+        <textarea name="your Message" placeholder="Message Here" required minlength="1" maxlength="500"></textarea>
         <input type="hidden" name="possible_bot" value="true">
 
         <button>Submit</button>
