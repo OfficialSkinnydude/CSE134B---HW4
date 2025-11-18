@@ -99,7 +99,8 @@ main{
 
 .form input{
     outline-color:lightgrey ;
-    background-color:#F8FAF9;
+    background-color:var(--primary-background);
+    color: var(--primary-color);
     border: 0;
     border-radius: 20px;
     width: 30vw;
@@ -122,7 +123,8 @@ main{
     outline-color: lightgrey;
     font-family: 'Open Sans', Arial, sans-serif;
     resize: none;
-    background-color: #F8FAF9;
+    background-color:var(--primary-background);
+    color: var(--primary-color);
     border: 0;
     border-radius: 20px;
     width: 30vw;
@@ -150,8 +152,8 @@ main{
 }
 
 .form button{
-    color: grey;
-    background-color: #F8FAF9;
+    background-color:var(--primary-background);
+    color: var(--primary-color);
     border: 0;
     border-radius: 20px;
     width: 30vw;
