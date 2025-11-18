@@ -2,28 +2,29 @@
 
 :root {
   color-scheme: light dark;
-}
-
-
-:root {
-  color-scheme: light dark;
   --primary-color: light-dark(#333, #fafafa);
   --primary-background: light-dark(#F8FAF9, #121212);
   --highlight-color: light-dark(hotpink, lime);
 }
 
-:root {
-  &:has(input[name="color-scheme"][value="light"]:checked) {
-    color-scheme: light;
-  }
-  &:has(input[name="color-scheme"][value="dark"]:checked) {
-    color-scheme: dark;
-  }
+:root[data-theme="light"] {
+  color-scheme: light;
+  --primary-color: #333;
+  --primary-background: #F8FAF9;
+  --highlight-color: hotpink;
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --primary-color: #fafafa;
+  --primary-background: #333;
+  --highlight-color: lime;
 }
 
 
 body {
-    background-color: light-dark(#F8FAF9, #333);
+    background-color: var(--primary-background);
+    color: var(--primary-color);
     font-family: 'Open Sans', Arial, sans-serif;
     animation-name: fadeIn;
     animation-duration: 0.5s;
@@ -116,6 +117,19 @@ main section {
     label{
         padding-top: 18px;
         padding-left: 20px;
+    }
+    button{
+        font-family: 'Open Sans', Arial, sans-serif;
+        height: 5vh;
+        margin-top: 18px;
+        margin-left: 20px;
+        border: 0;
+        border-radius: 20px;
+        box-shadow: 1px 1px 10px 2px rgb(0, 0, 0,0.3);
+
+    }
+    button:hover{
+        cursor: pointer;
     }  
 }
 
