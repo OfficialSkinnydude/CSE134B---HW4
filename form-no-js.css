@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 
-:root {
-  color-scheme: light dark;
-}
+
 
 
 :root {
@@ -20,6 +18,8 @@
     color-scheme: dark;
   }
 }
+
+
 
 
 body {
